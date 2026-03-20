@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Flower Shop</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background: #CCCCCC;
+    font-family: Verdana;
+    font-size: 12px;
+}
+
+#wrap {
+    width: 900px;
+    margin: auto;
+    background: #fff;
+}
+
+/* HEADER */
+#header {
+    background: url(images/header.jpg);
+    height: 181px;
+}
+
+#logo {
+    padding: 20px 0 0 50px;
+}
+
+#menu_top {
+    margin: 55px 0 0 30px;
+    background: #fff;
+    height: 40px;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+/* MENU */
+.level1 {
+    list-style: none;
+}
+
+.level1 li {
+    float: left;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.level1 li a {
+    text-decoration: none;
+    color: red;
+}
+
+.level1 li:hover a {
+    color: green;
+}
+
+.level2 {
+    display: none;
+    position: absolute;
+}
+
+.level1 li:hover .level2 {
+    display: block;
+}
+
+.level2 li {
+    background: #ccc;
+    padding: 10px;
+}
+
+/* WELCOME */
+#welcome {
+    padding: 8px;
+    border: dotted 2px #9c0;
+    font-weight: bold;
+}
+
+/* CONTENT */
+#left {
+    width: 500px;
+    float: left;
+}
+
+#right {
+    width: 350px;
+    float: right;
+}
+
+.title {
+    color: #B81F22;
+    font-size: 17px;
+    margin: 10px;
+}
+
+/* PRODUCT */
+.product {
+    border-bottom: dashed 1px #ccc;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.product .img {
+    float: left;
+    margin-right: 10px;
+}
+
+.product .description {
+    float: right;
+    width: 300px;
+}
+
+.product .name {
+    font-weight: bold;
+    color: #B81F22;
+}
+
+/* RIGHT */
+.product_small {
+    margin-bottom: 15px;
+}
+
+.product_small .img img {
+    width: 120px;
+}
+
+/* CATEGORY */
+.menu_right {
+    list-style-image: url(images/left_menu_bullet.gif);
+}
+
+.menu_right li {
+    padding: 5px;
+    border-bottom: dashed 1px #ccc;
+}
+
+/* FOOTER */
+#footer {
+    clear: both;
+    height: 100px;
+    border-top: dashed 1px #ccc;
+}
+
+#footer .left {
+    float: left;
+    padding: 10px;
+}
+
+#footer .right {
+    float: right;
+    padding: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="wrap">
+
+<header id="header">
+    <div id="logo">
+        <img src="images/logo.gif">
+    </div>
+
+    <nav id="menu_top">
+        <ul class="level1">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Introduction</a></li>
+
+            <li>
+                <a href="#">Flower Category</a>
+                <ul class="level2">
+                    <li><a href="#">Sun Flower</a></li>
+                    <li><a href="#">Rose Flower</a></li>
+                    <li><a href="#">Lily Flower</a></li>
+                    <li><a href="#">Tulips Flower</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="welcome">
+<marquee>Welcome to the online sales website - Flower Shop</marquee>
+</div>
+
+<div id="left">
+
+<div class="title">New Product</div>
+
+<div class="product">
+    <div class="img"><img src="images/prod1.gif"></div>
+    <div class="description">
+        <p class="name">Yellow Rose</p>
+        <p class="about">Yellow roses are a special gift for women...</p>
+    </div>
+</div>
+
+<div class="product">
+    <div class="img"><img src="images/prod2.gif"></div>
+    <div class="description">
+        <p class="name">Purple Rose</p>
+        <p class="about">A beautiful bouquet of purple roses...</p>
+    </div>
+</div>
+
+</div>
+
+<div id="right">
+
+<div class="title">Promotion</div>
+
+<div class="product_small">
+    <div class="name">Tulips Flower</div>
+    <div class="img"><img src="images/thumb1.gif"></div>
+</div>
+
+<div class="title">Flower catalog</div>
+<ul class="menu_right">
+    <li>Purple rose</li>
+    <li>Sun Flower</li>
+    <li>Lily Flower</li>
+    <li>Blue rose</li>
+</ul>
+
+</div>
+
+<footer id="footer">
+    <div class="left">
+        Flower Shop Co., Ltd - Vietnam Branch
+    </div>
+    <div class="right">
+        <img src="images/footer_logo.gif">
+    </div>
+</footer>
+
+</div>
+
+</body>
+</html>
