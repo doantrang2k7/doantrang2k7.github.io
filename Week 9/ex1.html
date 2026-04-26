@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Introduction to JavaScript</title>
+
+<script language="javascript">
+
+// Bài 1
+var text1 = prompt("Enter Number A");
+var text2 = prompt("Enter Number B");
+
+if (text1 == null || text2 == null) {
+    alert("Ban da bi connection interrupt");
+}
+else if (isNaN(text1) || isNaN(text2)) {
+    alert("Number A & B is formatted incorrect");
+}
+else {
+    var result = parseFloat(text1) + parseFloat(text2);
+    alert("Result: " + text1 + " + " + text2 + " = " + result);
+}
+
+// Bài 2
+var text = prompt("Enter any integer");
+
+if (text == null) {
+    document.write("<font color='red'><h1>You must enter a number</h1></font>");
+}
+else if (text % 2 == 0) {
+    document.write("<font color='green'><h1>" + text + " is an even number</h1></font>");
+}
+else {
+    document.write("<font color='blue'><h1>" + text + " is an odd number</h1></font>");
+}
+
+</script>
+
+</head>
+<body>
+</body>
+</html>
